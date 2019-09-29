@@ -1,0 +1,14 @@
+server:
+  port: 8090
+spring:
+  application:
+    name: eureka-server
+
+eureka:
+  instance:
+    hostname:  172.16.11.81
+  client:
+    # 当前的微服务不注册到eureka之中
+    register-with-eureka: false
+     # 不通过eureka获取注册信息
+    fetch-registry: false

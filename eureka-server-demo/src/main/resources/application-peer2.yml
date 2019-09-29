@@ -1,0 +1,11 @@
+server:
+  port: 8092
+
+
+eureka:
+  instance:
+    #主机名称
+    hostname:  peer2
+  client:
+    service-url:
+      defaultZone: http://peer1:8091/eureka/

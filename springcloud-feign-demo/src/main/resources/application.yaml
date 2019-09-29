@@ -1,0 +1,18 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: feign-demo
+
+#注册中心配置
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer1:8091/eureka/
+#断路器
+feign:
+  hystrix:
+    enabled: true
+
+
+
